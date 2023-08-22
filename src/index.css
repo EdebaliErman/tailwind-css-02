@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html,
+  body {
+    @apply w-full h-full flex items-center justify-center bg-backColor
+  }
+
+ 
+}
+
+@layer components {
+  .App {
+    @apply flex items-center justify-center
+  }
+
+  .navbar {
+    @apply fixed bottom-0 h-20 w-96 m-12 flex  bg-svgBackColor p-4 rounded-lg 
+    
+  }
+  .sidebar-icon{
+    @apply relative flex items-center justify-center 
+    h-12 w-12 mb-2 mx-auto bg-svgColor hover:bg-textColor hover:rounded-xl rounded-3xl transition-all duration-300 ease-linear
+    cursor-pointer shadow-lg 
+  }
+  .sidebar-tooltip{
+    @apply absolute w-auto  font-bold p-2 m-2 min-w-max bottom-16 rounded-md shadow-md text-textColor bg-iconColor transition-all duration-100 scale-0 origin-bottom 
+  }
+
+}
